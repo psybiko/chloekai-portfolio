@@ -1,7 +1,15 @@
+/* COLOURS
+Pastel purple #C8C7FD
+Matte blue #3187FF
+Mint green #74F6CF
+Salmon #F69D86
+ */
+
 body {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 aside {
@@ -9,6 +17,23 @@ aside {
   width: 300px;
   position: fixed;
 }
+
+.sidebar-intro h1 {
+  color: white;
+  text-shadow: -6px 6px 0px rgba(240, 181, 213, 0.7),
+    -12px 12px 0px rgba(198, 194, 216, 0.7);
+  -webkit-text-stroke: 0.5px #f0b5d5;
+  text-transform: uppercase;
+  font-size: 7vw;
+  font-weight: 900;
+  text-align: center;
+}
+
+.sidebar-intro p {
+  font-weight: 700;
+  text-align: center;
+}
+
 .nav-flex {
   height: 100vh;
   display: flex;
@@ -19,8 +44,25 @@ aside {
 nav {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
 }
 
+nav a {
+  text-decoration: none;
+  /* margin-bottom: 1em; */
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  background: #f0b5d5;
+  background: -webkit-linear-gradient(122deg, #bf8dc1 0%, #84b0d3 100%);
+  background: -o-linear-gradient(122deg, #bf8dc1 0%, #84b0d3 100%);
+  background: linear-gradient(328deg, #bf8dc1 0%, #84b0d3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dac492",endColorstr="#9fc6c7",GradientType=1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
 
 main {
   display: flex;
@@ -39,6 +81,7 @@ main {
 }
 
 .project-img {
-  width: 100%;
+  width: 70%;
   height: 40%;
+  margin: 25px 0;
 }
