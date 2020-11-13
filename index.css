@@ -27,11 +27,14 @@ aside {
   font-size: 7vw;
   font-weight: 900;
   text-align: center;
+  margin-left: 1vw;
 }
 
 .sidebar-intro p {
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
 }
 
 .nav-flex {
@@ -81,7 +84,17 @@ main {
 }
 
 .project-img {
-  width: 70%;
+  width: 85%;
   height: 40%;
   margin: 25px 0;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-container p {
+  margin: 0 40px;
 }
